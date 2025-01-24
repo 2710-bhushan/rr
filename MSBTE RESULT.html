@@ -1,0 +1,164 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSBTE RESULT</title>
+    <style>
+        /* Reset Styles */
+        body, h1, p, form, input, select, button {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #ffffe0;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 400px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        /* Header Section */
+        .header {
+            background-color: #fff;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .logo img {
+            width: 60px;
+            margin-bottom: 10px;
+        }
+
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 1.5;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        /* Form Section */
+        .form-section {
+            padding: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .form-group label {
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group select,
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-group input[type="text"] {
+            text-align: center;
+        }
+
+        /* Captcha Styles */
+        .captcha {
+            font-size: 18px;
+            font-weight: bold;
+            color: #d32f2f;
+            letter-spacing: 2px;
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        /* Button */
+        .btn {
+            background-color: #ffcc00;
+            border: none;
+            color: #000;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #f5b800;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <div class="logo">
+                <img src="MSBTE.jpg" src="https://result.msbte.ac.in/">
+            </div>
+            <div class="title">
+                Maharashtra State Board of Technical Education<br>
+                महाराष्ट्र राज्य तंत्र शिक्षण मंडळ, मुंबई
+            </div>
+        </div>
+
+        <!-- Form Section -->
+        <div class="form-section">
+            <form>
+                <div class="form-group">
+                    <label for="selection">Select Enrollment No. or Seat No.</label>
+                    <select id="selection">
+                        <option value="" disabled="" selected="">(See Below)</option>
+                        <option value="enrollment">Enrollment No.</option>
+                        <option value="seat">Seat No.</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="enrollment">Enter Enrollment No. or Seat No.</label>
+                    <input type="text" id="enrollment" placeholder="Enter here">
+                </div>
+                <div class="form-group">
+                    <label>Captcha</label>
+                    <div class="captcha">EcA92kf</div>
+                </div>
+                <div class="form-group">
+                    <label for="captcha">Type Above Captcha Here</label>
+                    <input type="text" id="captcha" placeholder="Enter Captcha">
+                </div>
+                <button type="button" class="btn" onclick="playVideo()">Show Result</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript for Video -->
+    <script>
+        function playVideo() {
+            const videoPath = 'Result.mp4'; // Replace this with your video path
+            if (!videoPath) {
+                alert('No video file provided! Add the video path in the script.');
+            } else {
+                window.open(videoPath, '_blank'); // Opens the video in a new tab
+            }
+        }
+    </script>
+
+
+</body></html>
